@@ -1,0 +1,27 @@
+main textarea {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 35px;
+}
+
+main button {
+  font-family: "Bungee" ;
+  color: white;
+  background-color: #4056A1;
+}
+
+main div.submission {
+  display: flex;
+  justify-content: space-between;
+}
+
+main output.counter {
+  font-family: "Bungee";
+}
+
+main div {
+  padding-top: 10px;
+}
