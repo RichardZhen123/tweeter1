@@ -1,0 +1,49 @@
+article.tweetBox {
+  border: 2px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 50px;
+}
+
+article.tweetBox:hover {
+  box-shadow: 5px 10px rgb(179, 179, 243);
+}
+
+article div.profile {
+  display:flex;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+article p.content {
+  padding-left: 10px;
+}
+
+article p.tag {
+  color:#405c8d;
+  font-size: medium;
+}
+
+article footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  font-size: small;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  border-top: 2px solid black;
+}
+
+.profile i {
+  font-size: 50px;
+  padding-right: 5px;
+}
+
+.icons i:hover {
+  color: rgb(240, 240, 98);
+}
