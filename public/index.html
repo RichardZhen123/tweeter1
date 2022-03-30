@@ -38,13 +38,15 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
 
-     <!-- Counter JS -->
-     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!-- Counter JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
 
+    <!-- timeago -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
@@ -56,64 +58,26 @@
     </nav>
     <header id="loginInfo" >
       <div>
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+        <h2>Your Name</h2>
       </div>
     </header>
-    
+
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets" >
+        <form method="POST" action="/tweets" id="tweetForm">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="submission">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text"><b>140</b></output>
           </div>
         </form>
-
-        <article class="tweetBox">
-          <header>
-            <div class="profile">
-              <i class="fa-solid fa-user-doctor"></i>
-              <p>Shaun Yap</p>
-            </div>
-            <p class="tag">@Shaun</p> 
-          </header>
-          <p class="content">Men</p>
-          <footer>
-            <p> 10 days ago </p>
-            <div class="icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-        
-        <article class="tweetBox">
-          <header>
-            <div class="profile">
-              <i class="fa-solid fa-user-doctor"></i>
-              <p>Joe Brown</p>
-            </div>
-            <p class="tag">@Brownie</p> 
-          </header>
-          <p class="content">Love</p>
-          <footer>
-            <p> 10 days ago </p>
-            <div class="icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-
+        <section class="tweetsContainer"></section>
       </section>
     </main>
   </body>

@@ -24,6 +24,9 @@ module.exports = function(DataHelpers) {
     }
 
     const user = req.body.user ? req.body.user : userHelper.generateRandomUser();
+
+    console.log("user",user);
+
     const tweet = {
       user: user,
       content: {
@@ -31,6 +34,8 @@ module.exports = function(DataHelpers) {
       },
       created_at: Date.now()
     };
+
+    console.log("tweet",tweet)
 
     DataHelpers.saveTweet(tweet, (err) => {
       if (err) {

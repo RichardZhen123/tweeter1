@@ -6,7 +6,8 @@ nav {
   justify-content: space-between;
   font-family:'Source Sans Pro',sans-serif;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0;
 }
 
 nav span#logo {

@@ -39,11 +39,21 @@ article footer {
   border-top: 2px solid black;
 }
 
-.profile i {
-  font-size: 50px;
+.profile img {
   padding-right: 5px;
 }
 
 .icons i:hover {
-  color: rgb(240, 240, 98);
+  color: rgb(235, 195, 16);
+}
+
+.profile p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tweetsContainer {
+  display:flex;
+  flex-direction: column-reverse;
 }
