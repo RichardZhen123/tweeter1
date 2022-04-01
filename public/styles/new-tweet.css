@@ -1,4 +1,4 @@
-main textarea {
+#tweet-text {
   border: 0;
   outline: 0;
   background: transparent;
@@ -13,16 +13,21 @@ main button {
   background-color: #4056A1;
 }
 
-main div.submission {
+div.submission {
   display: flex;
   justify-content: space-between;
 }
 
-main output.counter {
+output.counter {
   font-family: "Bungee";
 }
 
 main div {
   padding-top: 10px;
-  margin-bottom: 100px
+}
+
+.new-tweet {
+  padding-top: 120px;
+  width: 60%;
+  margin-right: 2.5%;
 }

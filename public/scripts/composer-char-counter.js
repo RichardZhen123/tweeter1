@@ -12,6 +12,12 @@ $(document).ready(function() {
     }
 
     $('.counter').html(charRemain);
+
+    // Hiding alert box
+    if (charRemain <= 140 && charRemain > 0) {
+      $("#box").slideUp();
+      $("#box2").slideUp();
+    }
   });
   
 });

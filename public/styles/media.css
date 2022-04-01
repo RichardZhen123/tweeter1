@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+  header#loginInfo {
+    height: 520px;
+    position: unset;
+    width: 100%;
+    padding-top: 140px;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  section.new-tweet {
+    padding-top: 0;
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
