@@ -53,7 +53,6 @@ $(document).ready(function() {
   getTweet();
   
   $(".alertBox").hide();
-  $(".alertBox2").hide();
 
   $('#tweetForm').on('submit', function(e) {
     e.preventDefault();
@@ -78,4 +77,3 @@ $(document).ready(function() {
     })
   })
 });
-
