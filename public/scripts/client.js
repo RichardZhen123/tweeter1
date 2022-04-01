@@ -1,4 +1,3 @@
-// timeago.render(document.querySelectorAll('.need_to_be_rendered'));
 $(document).ready(function() {
   const renderTweets = function(tweets) {
     for (let obj of tweets) {
@@ -8,6 +7,7 @@ $(document).ready(function() {
     }
   }
   
+  // function to convert to text to prevent cross site scripting attacks
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -37,7 +37,7 @@ $(document).ready(function() {
     </div>
     </footer>`
     
-    let newTweet = $tweet.append(tweetContent);
+    const newTweet = $tweet.append(tweetContent);
     return newTweet;
   };
   
@@ -64,7 +64,7 @@ $(document).ready(function() {
       return $("#box").slideDown();
     }
 
-    if (tweet === null || tweet === "") {
+    if (!tweet) {
       return $("#box2").slideDown();
     }
     
@@ -77,6 +77,5 @@ $(document).ready(function() {
       $("#tweet-text").val("");
     })
   })
- 
 });
 

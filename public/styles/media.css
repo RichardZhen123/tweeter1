@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+  nav {
+    background-color: transparent;
+  }
+
   header#loginInfo {
     height: 520px;
     position: unset;

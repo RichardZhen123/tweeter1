@@ -3,17 +3,14 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> <!-- bungee font -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet"> <!-- Source Sans Pro Font -->
-
-    <!-- CSS Stylesheets -->
+    
+    <!-- Local CSS Stylesheets -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />   <!-- App CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" /> <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />  <!-- Header CSS -->
@@ -21,21 +18,18 @@
     <link rel="stylesheet" href="/styles/tweet-box.css" type="text/css" /> <!-- Tweet Box CSS -->
     <link rel="stylesheet" href="/styles/alert.css" type="text/css" /> <!-- Alert Box CSS -->
     <link rel="stylesheet" href="/styles/media.css" type="text/css" /> <!-- Media CSS -->
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- timeago -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" /> <!-- External CSS -->
+    
+    <!-- Local JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script> <!-- App JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script> <!-- Counter JS -->
 
     <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-
-    <!-- Counter JS -->
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- timeago -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- External JS -->
   </head>
 
   <body>
@@ -48,13 +42,9 @@
     </nav>
     <div class="content">
       <header id="loginInfo" >
-        <div>
           <img src="/images/profile-hex.png"> 
-        </div>
         <br>
-        <div>
-          <h2>Your Name</h2>
-        </div>
+        <h2>Your Name</h2>
       </header>
       <main class="container">
         <section class="new-tweet">

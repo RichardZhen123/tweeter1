@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $('#tweet-text').on('keyup', (event) => {
     const maxLength = 140;
-    let message = event.target.value;
-    let tweetLength = message.length;
-    let charRemain = maxLength - tweetLength;
+    const message = event.target.value;
+    const tweetLength = message.length;
+    const charRemain = maxLength - tweetLength;
     
     if (tweetLength > maxLength) {
       $('.counter').css("color", "red");
@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('.counter').html(charRemain);
 
     // Hiding alert box
-    if (charRemain <= 140 && charRemain > 0) {
+    if (charRemain <= maxLength && charRemain > 0) {
       $("#box").slideUp();
       $("#box2").slideUp();
     }
