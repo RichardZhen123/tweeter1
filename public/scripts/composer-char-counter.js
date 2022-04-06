@@ -10,7 +10,7 @@ $(document).ready(function() {
     } else {
       $('.counter').css("color", "black")
     }
-
+    
     $('.counter').html(charRemain);
 
     // Hiding alert box

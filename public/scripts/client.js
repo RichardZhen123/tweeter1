@@ -14,6 +14,7 @@ $(document).ready(function() {
     return div.innerHTML;
   };
   
+  //dynamically creating tweet boxes as they are entered with profiles
   const createTweetElement = function(tweet) {
     let $tweet = $("<article>").addClass("tweetBox");
     const date = timeago.format(tweet.created_at);
@@ -52,13 +53,16 @@ $(document).ready(function() {
   
   getTweet();
   
+  //hiding tweet box initially so it does not display on intial load
   $(".alertBox").hide();
 
+  //event listener for clicking "Tweet" 
   $('#tweetForm').on('submit', function(e) {
     e.preventDefault();
     const content = $("#tweetForm").serialize();
     const tweet = $("#tweet-text").val();
-    
+  
+    //if stmts to show error msgs
     if (tweet.length > 140) {
       return $("#box").slideDown();
     }
@@ -76,6 +80,7 @@ $(document).ready(function() {
       $("#tweet-text").val("");
     })
 
+    // resetting counter to 140
     $('.counter').html("140");
   })
 });
