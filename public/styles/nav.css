@@ -11,7 +11,7 @@ nav {
   z-index: 2;
 }
 
-span#logo {
+#logo {
   display: flex;
   font-family: 'Bungee', sans-serif;
   justify-content: center;

@@ -4,7 +4,7 @@
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   }
 
-  header#loginInfo {
+  #loginInfo {
     height: 520px;
     position: unset;
     width: 100%;
