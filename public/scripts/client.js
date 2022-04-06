@@ -59,7 +59,7 @@ $(document).ready(function() {
     const content = $("#tweetForm").serialize();
     const tweet = $("#tweet-text").val();
     
-    if (tweet.length >= 140) {
+    if (tweet.length > 140) {
       return $("#box").slideDown();
     }
 
@@ -75,5 +75,7 @@ $(document).ready(function() {
       getTweet();
       $("#tweet-text").val("");
     })
+
+    $('.counter').html("140");
   })
 });

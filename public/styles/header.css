@@ -4,9 +4,10 @@ header#loginInfo {
   align-items: center;
   justify-content: center;
   width:35%;
+  margin-top: 120px;
   height: 100%;
   position: fixed;
-  background-color: orange;
+  background-color: #ffa500;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   z-index: 1;
 }

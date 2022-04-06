@@ -57,3 +57,7 @@ article footer {
   display:flex;
   flex-direction: column-reverse;
 }
+
+.content {
+  word-wrap: break-word;
+}

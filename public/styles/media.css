@@ -1,13 +1,13 @@
 @media (max-width: 1024px) {
   nav {
-    background-color: transparent;
+    background-color: #ffa500;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
   }
 
   header#loginInfo {
     height: 520px;
     position: unset;
     width: 100%;
-    padding-top: 140px;
   }
 
   .container {
